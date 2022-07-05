@@ -20,10 +20,10 @@ function tooglePlay() {
     video.play();
     progress();
     progression = window.setInterval(progress, 150);
-    playBtn.style.backgroundImage = `url(/assets/svg/pause.svg)`;
+    playBtn.style.backgroundImage = `url("assets/svg/pause.svg")`;
   } else {
     video.pause();
-    playBtn.style.backgroundImage = `url(/assets/svg/play.svg)`;
+    playBtn.style.backgroundImage = `url("assets/svg/play.svg")`;
     clearInterval(progression);
   }
 }
@@ -33,11 +33,11 @@ function videoVolume() {
     lastVolume.push(changeVolume.value);
     changeVolume.value = 0;
     volume.bind(changeVolume)();
-    volumeIcon.style.backgroundImage = `url(/assets/svg/mute.svg)`;
+    volumeIcon.style.backgroundImage = `url("assets/svg/mute.svg")`;
   } else {
     changeVolume.value = lastVolume.pop();
     volume.bind(changeVolume)();
-    volumeIcon.style.backgroundImage = `url(/assets/svg/volume.svg)`;
+    volumeIcon.style.backgroundImage = `url("assets/svg/volume.svg")`;
   }
 }
 // set volumeValue, volumeProgressBar style;
@@ -50,7 +50,7 @@ function volume() {
         #fff 40%,
         #fff 100%)`;
   if (video.volume)
-    volumeIcon.style.backgroundImage = `url(/assets/svg/volume.svg)`;
+    volumeIcon.style.backgroundImage = `url("assets/svg/volume.svg")`;
 }
 
 //video progressBar
