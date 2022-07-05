@@ -1,4 +1,4 @@
-@import url("../source/reset-style.css");
+@import url("source/reset-style.css");
 .wrapper {
   height: 100%;
   display: -webkit-box;
@@ -96,10 +96,10 @@ video {
   background-position: center;
 }
 .player__playBtn {
-  background-image: url("../assets/svg/play.svg");
+  background-image: url("assets/svg/play.svg");
 }
 .player__volumeIcon {
-  background-image: url("../assets/svg/volume.svg");
+  background-image: url("assets/svg/volume.svg");
 }
 .player__time {
   display: -webkit-box;
@@ -110,7 +110,7 @@ video {
   font-weight: bold;
 }
 .player__fullscreen {
-  background-image: url("../assets/svg/full-screen.svg");
+  background-image: url("assets/svg/full-screen.svg");
 }
 
 .changeVolume {
@@ -136,5 +136,5 @@ video {
 }
 
 .pause {
-  background-image: url("../assets/svg/pause.svg");
+  background-image: url("assets/svg/pause.svg");
 }
